@@ -1,0 +1,89 @@
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: #f8f9fc;
+    color: #343a40;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    background: linear-gradient(90deg, #4e73df, #6f42c1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand,
+  .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #d1d1ff !important;
+  }
+  
+  section {
+    padding: 4rem 1rem;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  section:nth-child(odd) {
+    background-color: #f1f3f9;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+    color: #4e73df;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-custom {
+    background: linear-gradient(135deg, #4e73df, #6f42c1);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 0.6rem 1.4rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 10px rgba(78, 115, 223, 0.3);
+  }
+  
+  .btn-custom:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #6f42c1, #4e73df);
+  }
+  
+  .card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background: #4e73df;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  footer a:hover {
+    color: #dcdcf9;
+  }
+  
+  a, button {
+    transition: all 0.3s ease;
+  }

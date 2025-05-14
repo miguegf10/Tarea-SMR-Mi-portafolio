@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Mi Portfolio SMR - Miguel Ángel</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Mi Portafolio SMR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="montaje.html">Montaje</a></li>
+          <li class="nav-item"><a class="nav-link" href="sistemas_monopuesto.html">S. Monopuesto</a></li>
+          <li class="nav-item"><a class="nav-link" href="ofimatica.html">Ofimática</a></li>
+          <li class="nav-item"><a class="nav-link" href="redes_locales.html">Redes Locales</a></li>
+          <li class="nav-item"><a class="nav-link" href="sistemas_red.html">S. en Red</a></li>
+          <li class="nav-item"><a class="nav-link active" href="seguridad.html">Seguridad</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios_red.html">Servicios en Red</a></li>
+          <li class="nav-item"><a class="nav-link" href="aplicaciones_web.html">Aplicaciones Web</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <section class="container my-5">
+    <h1 class="mb-4">Seguridad Informática</h1>
+    <p>En el módulo de Seguridad Informática, se abordan los conceptos clave de la protección de sistemas informáticos y redes frente a amenazas externas e internas, incluyendo el uso de técnicas de cifrado, firewalls, antivirus y políticas de seguridad.</p>
+
+    <h3 class="mt-5">📘 Contenidos destacados</h3>
+    <ul>
+      <li>Criptografía: técnicas y algoritmos utilizados para proteger la información.</li>
+      <li>Firewalls y su configuración para proteger redes locales y sistemas.</li>
+      <li>Seguridad en la nube y en redes inalámbricas.</li>
+      <li>Gestión de contraseñas y autenticación multifactor.</li>
+    </ul>
+
+    <h3 class="mt-5">🔒 Estrategias de protección</h3>
+    <p>El módulo enseña las mejores prácticas en seguridad, como la creación de políticas de seguridad en redes, el uso de VPNs, el análisis de vulnerabilidades y la implementación de sistemas de detección de intrusos (IDS).</p>
+
+    <h3 class="mt-5">🛡️ Ejemplo de implementación de firewall</h3>
+    <p>A continuación se muestra un ejemplo básico de configuración de un firewall en un sistema Linux utilizando `iptables`:</p>
+    <pre><code>
+# Bloquear tráfico entrante
+sudo iptables -A INPUT -j DROP
+
+# Permitir tráfico entrante de una IP específica
+sudo iptables -A INPUT -s 192.168.1.100 -j ACCEPT
+
+# Guardar configuración
+sudo iptables-save > /etc/iptables/rules.v4
+    </code></pre>
+
+    <h3 class="mt-5">📷 Evidencias</h3>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="image/Configuracion-firewall-Linux.webp" class="card-img-top" alt="Configuración de firewall">
+          <div class="card-body">
+            <p class="card-text">Configuración de firewall utilizando `iptables` en Linux.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="image/Monitoreo-Trafico.png" class="card-img-top" alt="Monitoreo de tráfico">
+          <div class="card-body">
+            <p class="card-text">Monitoreo del tráfico de red para detectar intrusiones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <a href="index.html" class="btn btn-custom">Volver al inicio</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-5 py-3 text-center text-muted border-top">
+    <p>&copy; 2025 Miguel Ángel - Portafolio SMR</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
